@@ -24,7 +24,7 @@
 async function getCategoryIds() {
     try {
       let res = await axios.get('http://jservice.io/api/categories', {
-        params: { count: 100, offset: Math.floor(Math.random() * 7220) },
+        params: { count: 100, offset: Math.floor(Math.random() * 3000) },
       });
       return _.sampleSize(res.data, 6);
     } catch (err) {
